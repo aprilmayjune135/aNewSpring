@@ -14,7 +14,7 @@ public class Simulation {
 		if (init(args) == -1) {
 			return ;
 		}
-		runRounds(true);
+		runRounds(false);
 	}
 	
 	/* private methods */
@@ -41,7 +41,5 @@ public class Simulation {
 		System.out.println(Color.PURPLE_BOLD + "[ FINAL ]" + Color.RESET);
 		grid.print();
 	}
-
-
 
 }

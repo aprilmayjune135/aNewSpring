@@ -25,8 +25,8 @@ public class InputData {
 			return -1;
 		}
 		try {
-			gridScale = Parse.parseNumber(args[0], "Grid scale", 10000); // TODO: to review max
-			rounds = Parse.parseNumber(args[1], "Number of rounds", 10000); // TODO: to review max
+			gridScale = Parse.parseNumber(args[0], "Grid scale", 5000);
+			rounds = Parse.parseNumber(args[1], "Number of rounds", 1000000);
 			infectionThreshold = Parse.parseNumber(args[2], "Unfection threshold", 7);
 			recoveryThreshold = Parse.parseNumber(args[3], "Recovery threshold", 7);
 			infections = Parse.parseInputInfected(args[4], gridScale);
