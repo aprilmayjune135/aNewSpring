@@ -5,7 +5,6 @@ import util.Util;
 
 public class InputData {
 	/* private members */
-	private Util util = new Util();
 	private int gridScale = 0;
 	private int rounds = 0;
 	private int infectionThreshold = 0;
@@ -26,11 +25,11 @@ public class InputData {
 			return -1;
 		}
 		try {
-			gridScale = util.parseNumber(args[0], "Grid scale", 10000); // TODO: to review max
-			rounds = util.parseNumber(args[1], "Number of rounds", 10000); // TODO: to review max
-			infectionThreshold = util.parseNumber(args[2], "Unfection threshold", 7);
-			recoveryThreshold = util.parseNumber(args[3], "Recovery threshold", 7);
-			infections = util.parseInputInfected(args[4], gridScale);
+			gridScale = Util.parseNumber(args[0], "Grid scale", 10000); // TODO: to review max
+			rounds = Util.parseNumber(args[1], "Number of rounds", 10000); // TODO: to review max
+			infectionThreshold = Util.parseNumber(args[2], "Unfection threshold", 7);
+			recoveryThreshold = Util.parseNumber(args[3], "Recovery threshold", 7);
+			infections = Util.parseInputInfected(args[4], gridScale);
 		}
 		catch (Exception ex) {
 			System.out.println("Error: Invalid input: " + ex.getMessage());
@@ -43,7 +42,7 @@ public class InputData {
 		return 0;
 	}
 
-	public void printAll() {
+	public void print() {
 		System.out.println("gridScale: " + gridScale);
 		System.out.println("rounds: " + rounds);
 		System.out.println("infectionThreshold: " + infectionThreshold);

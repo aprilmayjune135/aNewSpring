@@ -5,7 +5,7 @@ import java.util.Vector;
 import data.InputInfected;
 
 public class Util {
-	public int parseNumber(String arg, String inputType, int Max) throws Exception {
+	public static int parseNumber(String arg, String inputType, int Max) throws Exception {
 		int ret = -1;
 		try {
 			ret = Integer.parseInt(arg);
@@ -23,7 +23,7 @@ public class Util {
 	}
 
 	/* note: do not check for duplicate infections */
-	public Vector<InputInfected> parseInputInfected(String arg, int gridScale) throws Exception {
+	public static Vector<InputInfected> parseInputInfected(String arg, int gridScale) throws Exception {
 		Vector<InputInfected> ret = new Vector<InputInfected>();
 		try {
 			arg = arg.replace("[<", "");
@@ -43,7 +43,7 @@ public class Util {
 		return ret;
 	}
 
-	private InputInfected	parseSingleInputInfected(String str, int gridScale) throws Exception {
+	private static InputInfected	parseSingleInputInfected(String str, int gridScale) throws Exception {
 		String[] numbers = str.split(",");
 		if (numbers.length != 2) {
 			throw new Exception(str);
