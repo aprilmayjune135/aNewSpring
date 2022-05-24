@@ -1,4 +1,4 @@
-![alt text](https://scontent-amt2-1.xx.fbcdn.net/v/t1.18169-9/45232_497259046987882_1455867530_n.png?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=G6svAvNfv6gAX-diFgX&tn=Vau52AB2JBiLL9Ku&_nc_ht=scontent-amt2-1.xx&oh=00_AT8HZZOvFsIs4if44fCs9SkthZe9Xt6hTmlgh-LR2jaA0g&oe=62B343C8)
+![alt text](https://github.com/aprilmayjune135/aNewSpring/blob/main/assignment_image.png)
 # aNewSpring Assignment - Pandemic
 ## Assignment Subject
 Build a simulation (using `JAVA`) that models this virus spread on a grid of `n`*`n` persons.<br />
