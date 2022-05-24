@@ -2,6 +2,7 @@ package simulation;
 
 import data.Grid;
 import data.InputData;
+import util.Color;
 
 public class Simulation {
 	/* private members */
@@ -13,6 +14,7 @@ public class Simulation {
 		if (init(args) == -1) {
 			return ;
 		}
+		runRounds(true);
 	}
 	
 	/* private methods */
@@ -20,9 +22,26 @@ public class Simulation {
 		if (input.parseInput(args) == -1) {
 			return -1;
 		}
-		grid.initGrid(input.getGridScale(), input.getInfections());
-		grid.print();
+		grid.initGrid(input);
 		return 0;
 	}
+
+	private void runRounds(boolean isPrintProcess) {
+		System.out.println(Color.PURPLE_BOLD + "[ INIT ]" + Color.RESET);
+		grid.print();
+
+		for (int i = 1; i < input.getRounds() + 1; ++i) {
+			grid.evaluate();
+			if (isPrintProcess) {
+				System.out.println(Color.PURPLE_BOLD + "[ ROUND " + i + "]" + Color.RESET);
+				grid.print();
+			}
+		}
+
+		System.out.println(Color.PURPLE_BOLD + "[ FINAL ]" + Color.RESET);
+		grid.print();
+	}
+
+
 
 }

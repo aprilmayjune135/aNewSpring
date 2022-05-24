@@ -4,7 +4,7 @@ import java.util.Vector;
 
 import data.InputInfected;
 
-public class Util {
+public class Parse {
 	public static int parseNumber(String arg, String inputType, int Max) throws Exception {
 		int ret = -1;
 		try {

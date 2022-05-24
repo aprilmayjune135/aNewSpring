@@ -1,7 +1,7 @@
 package data;
 import java.util.Vector;
 
-import util.Util;
+import util.Parse;
 
 public class InputData {
 	/* private members */
@@ -25,20 +25,20 @@ public class InputData {
 			return -1;
 		}
 		try {
-			gridScale = Util.parseNumber(args[0], "Grid scale", 10000); // TODO: to review max
-			rounds = Util.parseNumber(args[1], "Number of rounds", 10000); // TODO: to review max
-			infectionThreshold = Util.parseNumber(args[2], "Unfection threshold", 7);
-			recoveryThreshold = Util.parseNumber(args[3], "Recovery threshold", 7);
-			infections = Util.parseInputInfected(args[4], gridScale);
+			gridScale = Parse.parseNumber(args[0], "Grid scale", 10000); // TODO: to review max
+			rounds = Parse.parseNumber(args[1], "Number of rounds", 10000); // TODO: to review max
+			infectionThreshold = Parse.parseNumber(args[2], "Unfection threshold", 7);
+			recoveryThreshold = Parse.parseNumber(args[3], "Recovery threshold", 7);
+			infections = Parse.parseInputInfected(args[4], gridScale);
 		}
 		catch (Exception ex) {
 			System.out.println("Error: Invalid input: " + ex.getMessage());
 			return -1;
 		}
-		if (infectionThreshold >= recoveryThreshold ) {
-			System.out.println("Error: Invalid input: " + "Infection threshold: cannot be higher than recovery threshold");
-			return -1;
-		}
+		// if (infectionThreshold >= recoveryThreshold ) {
+		// 	System.out.println("Error: Invalid input: " + "Infection threshold: cannot be higher than recovery threshold");
+		// 	return -1;
+		// }
 		return 0;
 	}
 
