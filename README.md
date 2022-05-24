@@ -1,3 +1,4 @@
+![alt text](https://www.anewspring.com/wp-content/uploads/2018/11/aNewSpring-logo-white.png)
 # aNewSpring Assignment - Pandemic
 ## Assignment Subject
 Build a simulation (using `JAVA`) that models this virus spread on a grid of `n`*`n` persons.<br />
