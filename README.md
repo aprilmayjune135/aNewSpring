@@ -21,11 +21,11 @@ Program can be run at root repository by command:
 cd Pandemic; ./run.sh` + [required arguments]
 ```
 There have to be 5 arguments provided by the following order:
-1. Grid scale: has to be an integer no less than 1, no more than 5000 (in case of insufficient memory);
-2. Number of rounds: has to be an integer no less than 1, no more than 1 million;
-3. Infection threshold: has to be an integer no less than 1, no more than 7;
-4. Recovery threshold: has to be an integer no less than 1, no more than 7;
-5. Initi infected people's location: has to be a string, no white space allowed, has to have `"[]"` wrapped outside, a set of location has to be be in the format of `<[number],[number]>`, each set is seperated by a single `,`.
+1. `Grid scale`: has to be an integer no less than 1, no more than 5000 (in case of insufficient memory);
+2. `Number of rounds`: has to be an integer no less than 1, no more than 1 million;
+3. `Infection threshold`: has to be an integer no less than 1, no more than 7;
+4. `Recovery threshold`: has to be an integer no less than 1, no more than 7;
+5. `Initi infected people's location`: has to be a string, no white space allowed, has to have `"[]"` wrapped outside, a set of location has to be be in the format of `<[number],[number]>`, each set is seperated by a single `,`.
 
 ### Output
 Simulation is printed in the standard output in a grid composed of either a `.` or a `X`.<br />
