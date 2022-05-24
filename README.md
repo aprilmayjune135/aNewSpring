@@ -11,16 +11,18 @@ uninfected again.
 For example, a simulation on an 8x8 grid, with 7 rounds, an infection threshold of 3,
 a recovery threshold of 6 and 3 infected persons to start with can be run with a
 command similar to the following:
+```
 java pandemic 8 7 3 6 [<4,7>,<4,8>,<5,8>,<6,8>]
+```
 After a number of rounds the output should be displayed.
 
 ## Assignment Solution
 ### File Structure
 All `JAVA` files are in the `/Pandemic/src` directory under root repository.
 ### Run the program
-Program can be run by command:
+Program can be run at root repository by command:
 ```
-./run.sh` + [required arguments]
+cd Pandemic; ./run.sh` + [required arguments]
 ```
 There have to be 5 arguments provided by the following order:
 1. Grid scale: has to be an integer no less than 1, no more than 5000 (in case of insufficient memory);
