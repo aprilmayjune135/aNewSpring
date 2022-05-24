@@ -4,6 +4,7 @@ import java.util.Vector;
 import util.Util;
 
 public class InputData {
+	/* private members */
 	private Util util = new Util();
 	private int gridScale = 0;
 	private int rounds = 0;
@@ -11,6 +12,14 @@ public class InputData {
 	private int recoveryThreshold = 0;
 	private Vector<InputInfected>	infections;
 
+	/* getters */
+	public int getGridScale() { return gridScale; }
+	public int getRounds() { return rounds; }
+	public int getInfectionThreshold() { return infectionThreshold; }
+	public int getRecoveryThreshold() { return recoveryThreshold; }
+	public Vector<InputInfected> getInfections() { return infections; }
+
+	/* methods */
 	public int parseInput(String[] args) {
 		if (args.length != 5) {
 			System.out.println("Error: Wrong number of arguments!");

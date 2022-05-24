@@ -1,11 +1,8 @@
-import data.InputData;
+import simulation.Simulation;
 
 public class pandemic {
     public static void main(String[] args) throws Exception {
-        InputData data = new InputData();
-        if (data.parseInput(args) != -1) {
-            data.printAll();
-        }
-        
+        Simulation simulation = new Simulation();
+        simulation.run(args);
     }
 }
