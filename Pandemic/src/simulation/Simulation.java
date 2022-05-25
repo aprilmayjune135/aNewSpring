@@ -14,7 +14,7 @@ public class Simulation {
 		if (init(args) == -1) {
 			return ;
 		}
-		runRounds(false);
+		runRounds();
 	}
 	
 	/* private methods */
@@ -26,16 +26,14 @@ public class Simulation {
 		return 0;
 	}
 
-	private void runRounds(boolean isPrintProcess) {
+	private void runRounds() {
 		System.out.println(Color.PURPLE_BOLD + "[ INIT ]" + Color.RESET);
 		grid.print();
 
 		for (int i = 1; i < input.getRounds() + 1; ++i) {
 			grid.evaluate();
-			if (isPrintProcess) {
-				System.out.println(Color.PURPLE_BOLD + "[ ROUND " + i + "]" + Color.RESET);
-				grid.print();
-			}
+			System.out.println(Color.PURPLE_BOLD + "[ ROUND " + i + "]" + Color.RESET);
+			grid.print();
 		}
 
 		System.out.println(Color.PURPLE_BOLD + "[ FINAL ]" + Color.RESET);

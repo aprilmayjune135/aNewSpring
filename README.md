@@ -32,6 +32,4 @@ There have to be 5 arguments provided by the following order:
 Simulation is printed in the standard output in a grid composed of either a `.` or a `X`.<br />
 Uninfected person is represented by a green `.`.<br />
 Infected person is representated by a red `X`.<br />
-Initial grid and final grid after required number of rounds will be provided on standard output.<br />
-It is possible to also print out each round: in file `/src/simulation/Simulation.jave`, in methods `run()` by passing argument `true` to `runRounds()` (at line 17).
 
